@@ -1,21 +1,26 @@
-import React, { useState } from "react";
 import Inputfield from "./Inputfield";
-import ResourceList from "./ResourceList";
 import ThumbNails from "./ThumbNails";
+import UsePropsComp from "./UsePropsComp";
+import UseStateBasic from "./useStateBasics";
 import Users from "./Users";
+import CreateRemove from "./CreateRemove";
+import MainPosts from "./MainPosts";
+import ComplexCounter from "./ComplexCounter";
+import GitHubUsers from "./GitHubUsers";
 
 const App = () => {
-  const [resourceName, setResourceName] = useState('posts')
 
   return (
     <>
-      {/* <h5>Photos</h5> */}
+    <GitHubUsers />
+    <ComplexCounter />
+      <CreateRemove />
+      <UseStateBasic />
+      <UsePropsComp />
       <Inputfield />
       <ThumbNails />
       <Users/>
-      <button onClick={() => setResourceName ('posts')}>Posts</button>
-      <button onClick={() => setResourceName ('todos')}>Todos</button>
-      <ResourceList resourceName={resourceName}/>
+      <MainPosts />
     </>
   )
 
