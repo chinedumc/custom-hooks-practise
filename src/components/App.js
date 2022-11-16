@@ -7,23 +7,25 @@ import CreateRemove from "./CreateRemove";
 import MainPosts from "./MainPosts";
 import ComplexCounter from "./ComplexCounter";
 import GitHubUsers from "./GitHubUsers";
+import ShortCrctTernary from "./ShortCrct&Ternary";
+import ControlledInputs from "./ControlledInputs";
 
 const App = () => {
+	return (
+		<>
+			<ControlledInputs />
+			<ShortCrctTernary />
+			<GitHubUsers />
+			<ComplexCounter />
+			<CreateRemove />
+			<UseStateBasic />
+			<UsePropsComp />
+			<Inputfield />
+			<ThumbNails />
+			<Users />
+			<MainPosts />
+		</>
+	);
+};
 
-  return (
-    <>
-    <GitHubUsers />
-    <ComplexCounter />
-      <CreateRemove />
-      <UseStateBasic />
-      <UsePropsComp />
-      <Inputfield />
-      <ThumbNails />
-      <Users/>
-      <MainPosts />
-    </>
-  )
-
-}
-
-export default App
+export default App;
