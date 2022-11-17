@@ -1,5 +1,5 @@
 import Inputfield from "./Inputfield";
-import ThumbNails from "./ThumbNails";
+// import ThumbNails from "./ThumbNails";
 import UsePropsComp from "./UsePropsComp";
 import UseStateBasic from "./useStateBasics";
 import Users from "./Users";
@@ -9,10 +9,12 @@ import ComplexCounter from "./ComplexCounter";
 import GitHubUsers from "./GitHubUsers";
 import ShortCrctTernary from "./ShortCrct&Ternary";
 import ControlledInputs from "./ControlledInputs";
+import ManyControlledInputs from "./ManyControlledInputs";
 
 const App = () => {
 	return (
 		<>
+			<ManyControlledInputs />
 			<ControlledInputs />
 			<ShortCrctTernary />
 			<GitHubUsers />
@@ -21,7 +23,7 @@ const App = () => {
 			<UseStateBasic />
 			<UsePropsComp />
 			<Inputfield />
-			<ThumbNails />
+			{/* <ThumbNails /> */}
 			<Users />
 			<MainPosts />
 		</>
