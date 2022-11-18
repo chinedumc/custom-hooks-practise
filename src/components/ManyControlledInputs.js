@@ -10,18 +10,19 @@ const ManyControlledInputs = () => {
 
 	return (
 		<section>
+			<h2>Many Controlled Inputs</h2>
 			<form onSubmit={handleSubmit}>
 				<div>
 					<label htmlFor="name">Name : </label>
-					<input type="text" id="name" value={person.firstName} />
+					<input type="text" id="name" name="name" value={person.firstName} />
 				</div>
 				<div>
 					<label htmlFor="email">Email : </label>
-					<input type="text" id="email" value={person.email} />
+					<input type="text" id="email" name="email" value={person.email} />
 				</div>
 				<div>
 					<label htmlFor="age">Age : </label>
-					<input type="text" id="age" value={person.age} />
+					<input type="text" id="age" name="age" value={person.age} />
 				</div>
 				<button type="submit">Submit Details</button>
 			</form>
