@@ -10,10 +10,12 @@ import GitHubUsers from "./GitHubUsers";
 import ShortCrctTernary from "./ShortCrct&Ternary";
 import ControlledInputs from "./ControlledInputs";
 import ManyControlledInputs from "./ManyControlledInputs";
+import UsingReducer from "../components/useReducerSetup";
 
 const App = () => {
 	return (
 		<>
+			<UsingReducer />
 			<ManyControlledInputs />
 			<ControlledInputs />
 			<ShortCrctTernary />

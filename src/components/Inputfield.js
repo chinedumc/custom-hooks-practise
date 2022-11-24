@@ -5,7 +5,7 @@ const Inputfield = () => {
 
   useEffect(() => {
     InputRef.current.focus()
-  },  [])
+  })
 
   return (
     <div>
